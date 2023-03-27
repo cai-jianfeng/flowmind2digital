@@ -1,22 +1,20 @@
-##### detection2安装教程
+##### Detection2 Installation Tutorial
 
-- 注意：需要先下 pytorch，不然会报错
+- Notice：You need to install pytorch first, or you'll get an error
 
-- 下载：
+- Download the archive：
 
 ```
 git clone https://github.com/facebookresearch/detectron2.git
 ```
 
-
-
-- 安装：
+- Installation：
 
 ```
 python -m pip install -e detectron2
 ```
 
-- CPU运行示例(这个是示例用的，可以试一下)
+- CPU running example (this is for the example, try it out)
 
 ```
 python demo/demo.py --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml \
@@ -25,17 +23,16 @@ python demo/demo.py --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_
 --opts MODEL.DEVICE cpu
 ```
 
-- 运行检测代码(无arrow) --> 略
+##### Train Data
+- Run detection (with arrows)
 
-- 运行检测(有arrow)
-
-  - 将数据集放在detectron2同级目录下(注意是放在第二个detectron2的同级目录，同级目录的还有以及存在的output文件夹)：
+  - Run detections (with arrow) and place the dataset in the detectron2 sibling directory (note the second detectron2 sibling directory, along with the existing output folder) :
 
   ![1671285054390](C:\Users\86199\AppData\Roaming\Typora\typora-user-images\1671285054390.png)
-  - 改数据集名字：将数据集改成 dataset_arrow，同时将里面的 flow_chart_new 改成 flow_chart，并将 config.txt 文件放入：
+  - Change dataset name: Change the dataset to dataset_arrow, change the flow_chart_new inside to flow_chart, and put config.txt in it：
 
   ![1671285187192](C:\Users\86199\AppData\Roaming\Typora\typora-user-images\1671285187192.png)
-  - 运行程序(须在第一个 detectron2 目录下)：
+  - Run the program (in the first detectron2 directory)：
 
   ```python
   python train_keypoint.py
