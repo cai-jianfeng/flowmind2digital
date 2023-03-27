@@ -28,10 +28,10 @@ python demo/demo.py --config-file configs/COCO-InstanceSegmentation/mask_rcnn_R_
 
   - Run detections (with arrow) and place the dataset in the detectron2 sibling directory (note the second detectron2 sibling directory, along with the existing output folder) :
 
-  ![1671285054390](C:\Users\86199\AppData\Roaming\Typora\typora-user-images\1671285054390.png)
+  ![1671285054390](./fig/1671285054390.png)
   - Change dataset name: Change the dataset to dataset_arrow, change the flow_chart_new inside to flow_chart, and put config.txt in it：
 
-  ![1671285187192](C:\Users\86199\AppData\Roaming\Typora\typora-user-images\1671285187192.png)
+  ![1671285187192](./fig/1671285187192.png)
   - Run the program (in the first detectron2 directory)：
 
   ```python
