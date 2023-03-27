@@ -78,7 +78,7 @@ def get_predict_result(img_dir, predict_dir):
             pre = [pre_info]
 
 
-# 绘制预测框与真实框
+# Plot the predicted box against the true box
 def draw_rectangle_by_point(img_file_path, names, new_img_file_path, bboxs):
     image = cv2.imread(img_file_path)
     for i, info in enumerate(bboxs):
@@ -89,11 +89,11 @@ def draw_rectangle_by_point(img_file_path, names, new_img_file_path, bboxs):
             first_point = (int(bbox[0]), int(bbox[1]))
             last_point = (int(bbox[2]), int(bbox[3]))
 
-            print("左上角：", first_point)
-            print("右下角：", last_point)
-            cv2.rectangle(image, first_point, last_point, (0, 255, 0), 1)  # 在图片上进行绘制框
+            print("top left corner:", first_point)
+            print("lower right corner:", last_point)
+            cv2.rectangle(image, first_point, last_point, (0, 255, 0), 1)  # Draw a box on the image
             cv2.putText(image, names[i] + '_' + category, first_point, cv2.FONT_HERSHEY_COMPLEX, fontScale=0.5, color=(255, 0, 0),
-                        thickness=1)  # 在矩形框上方绘制该框的名称
+                        thickness=1)  # Draw the name of the box above the rectangle
     # cv2.imshow('predict', image)
     # cv2.waitKey()
     # cv2.destroyAllWindows()

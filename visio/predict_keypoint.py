@@ -135,5 +135,5 @@ for keypoint in keypoints:
 app.save(doc, r'D:\softward\detection2\demo.vsdx')
 app.close(doc, visio)
 
-shutil.rmtree(r'C:\Users\86199\AppData\Local\Temp\gen_py\3.8')
-os.mkdir(r'C:\Users\86199\AppData\Local\Temp\gen_py\3.8')
+# shutil.rmtree(r'C:\Users\86199\AppData\Local\Temp\gen_py\3.8')
+# os.mkdir(r'C:\Users\86199\AppData\Local\Temp\gen_py\3.8')

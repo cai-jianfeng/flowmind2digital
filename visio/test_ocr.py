@@ -23,9 +23,9 @@ import cv2
 
 old_time = time.time()
 
-# 图片地址
+# Image address
 img_path = 'ocr_test.jpg'
-ocr = PaddleOCR(lang="ch")  # 首次执行会自动下载模型文件，可以通过修改 lang 参数切换语种
+ocr = PaddleOCR(lang="ch")  # The first execution will automatically download the model file, and you can change the language by changing the lang parameter
 
 result = ocr.ocr(img_path)
 print(result)

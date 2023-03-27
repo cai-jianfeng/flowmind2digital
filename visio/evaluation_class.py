@@ -84,7 +84,7 @@ if __name__ == '__main__':
     for name in ann:
         val = calc4val(name)
         print(name)
-        for i in range(4):  # 四个值
+        for i in range(4):  # Four values
             for cls in range(12):
                 if val[i][cls] >= 0:
                     n[i][cls] += 1

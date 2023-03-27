@@ -32,7 +32,7 @@ MetadataCatalog.get('arrow_train').thing_classes = ['{}'.format(categ) for categ
 MetadataCatalog.get("arrow_train").keypoint_names = keypoint_names
 MetadataCatalog.get("arrow_train").keypoint_flip_map = keypoint_flip_map
 MetadataCatalog.get("arrow_train").evaluator_type = "coco"
-# arrow_metadata = MetadataCatalog.get('arrow_train')
+arrow_metadata = MetadataCatalog.get('arrow_train')
 print('register succeed!')
 
 # eval model result

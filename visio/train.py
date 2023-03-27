@@ -34,7 +34,7 @@ from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
 
-# In[1]: 加载训练图片样例与预训练模型进行预测
+# In[1]: Load training examples and pre-trained model for prediction
 # im = cv2.imread('./dataset/brace/1660923483556.png')
 # cv2.imshow('test', im)
 # cv2.waitKey()
@@ -60,7 +60,7 @@ from detectron2.data import MetadataCatalog, DatasetCatalog
 # cv2.waitKey()
 # cv2.destroyAllWindows()
 
-# In[2] 注册数据集
+# In[2] Registering the dataset
 from detectron2.structures import BoxMode
 
 
@@ -107,7 +107,7 @@ sketch_metadata = MetadataCatalog.get('sketch_train')
 #     cv2.waitKey()
 #     cv2.destroyAllWindows()
 
-# In[3] 训练
+# In[3] train
 print('-----train begin-----')
 from detectron2.engine import DefaultTrainer
 
@@ -132,7 +132,7 @@ trainer.resume_or_load(resume=False)
 trainer.train()
 print('-----train end------')
 
-# In[4]:测试模型结果
+# In[4]: Test model results
 print('-----eval begin-----')
 # Inference should use the config with parameters that are used in training
 # cfg now already contains everything we've set previously. We changed it a little bit for inference:
