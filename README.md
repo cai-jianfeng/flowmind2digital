@@ -6,3 +6,7 @@ Our method is based on Detectron2, whose code is available in 'https://github.co
 The mode parameter is available in 'https://huggingface.co/caijanfeng/flowmind2digital'.
 
 The public dataset(hdflowmind) is available in 'https://huggingface.co/datasets/caijanfeng/hdflowmind'.
+
+# 📄 License
+
+This repository includes components licensed under the Apache License 2.0.
